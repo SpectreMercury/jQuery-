@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>test5</title>
+    <script src="jquery-1.12.1.min.js"></script> 
+</head>
+<body>
+     <h3>例子</h3>
+    <p title="选择你最喜欢的水果">你最喜欢的水果是</p>
+    <ul>
+        <li>苹果</li>
+        <li>橘子</li>
+        <li>菠萝</li>
+    </ul>
+    <input type="checkbox" id="cr"/><label for="cr">我已经阅读了上面的制度.</label>
+    <script type="text/javascript">
+        $("ul li").click(function(){
+            $(this).clone().appendTo("ul");
+            $(this).clone(true).appendTo("body")
+        })
+
+    </script>
+</body>
+</html>

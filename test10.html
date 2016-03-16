@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>test5</title>
+    <style>
+        .high{
+            font-weight: bold;
+            color: red;
+        }
+        .another{
+            font-style: italic;
+            color:blue;
+        }
+    </style>
+    <script src="jquery-1.12.1.min.js"></script> 
+</head>
+<body>
+    <h3>例子</h3>
+    <input type = "button" id = "aaa" value="输出Class类"></button>
+    <input type = "button" id = "bbb" value="更改题目颜色"></button>
+    <input type = "button" id = "ccc" value="更改选项颜色"></button>
+    <p title="选择你最喜欢的水果">你最喜欢的水果是</p>
+    <ul>
+        <li>苹果</li>
+        <li>橘子</li>
+        <li>菠萝</li>
+    </ul>
+    <input type="checkbox" id="cr"/><label for="cr">我已经阅读了上面的制度.</label>
+    <script type="text/javascript">
+        $('#bbb').click(function(){
+             $("p").attr("class","high")
+             $("li").removeClass("high")
+        })
+        $('#ccc').click(function(){
+             $("li").attr("class","high")
+             $("p").removeClass("high")
+        })
+        $('#aaa').click(function(){
+             var $para = $("p");
+             var p_txt = $para.attr("title");
+             alert(p_txt);
+        })
+
+    </script>
+</body>
+</html>

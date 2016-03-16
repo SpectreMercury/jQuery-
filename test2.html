@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0Transitional//EN" "http://www.w3.org/TR.xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>test2</title>
+    <script src="jquery-1.12.1.min.js"></script>
+</head>
+<body>
+    <h3>例子</h3>
+    <p title="选择你最喜欢的水果">你最喜欢的水果是</p>
+    <ul>
+        <li>苹果</li>
+        <li>橘子</li>
+        <li>菠萝</li>
+    </ul>
+    <input type="checkbox" id="cr"/><label for="cr">我已经阅读了上面的制度.</label>
+    <script>
+        $(document).ready(function(){
+            var $cr = $("#cr");
+            var cr = $cr[0];
+            $cr.click(function() {
+                if (cr.checked) {
+                    alert("谁特么让你点了")
+                }
+            })
+            })
+    </script>
+</body>
+</html>
